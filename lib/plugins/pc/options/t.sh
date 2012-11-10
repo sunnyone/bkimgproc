@@ -7,4 +7,4 @@ else
   WHITE=$3
 fi
 
-/usr/bin/convert "$1" -modulate 100,0 -level 10%,${WHITE}%,0.8 -quality 90 "$2"
+/usr/bin/convert "$1" -modulate 100,0 -deskew 40% -level 10%,${WHITE}%,0.8 -quality 90 "$2"
